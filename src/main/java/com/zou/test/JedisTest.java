@@ -76,14 +76,14 @@ public class JedisTest {
         }
 
         //zset测试
-        jedis.zadd("zset01",100d,"z3");
-        jedis.zadd("zset01",90d,"l4");
-        jedis.zadd("zset01",80d,"w5");
-        jedis.zadd("zset01",70d,"z6");
+        jedis.zadd("zset01", 100d, "z3");
+        jedis.zadd("zset01", 90d, "l4");
+        jedis.zadd("zset01", 80d, "w5");
+        jedis.zadd("zset01", 70d, "z6");
         Set<String> zset01 = jedis.zrange("zset01", 0, -1);
-        System.out.println("\n"+"zset01中的信息：");
-        for (String e : zset01){
-            System.out.print(e+"\t");
+        System.out.println("\n" + "zset01中的信息：");
+        for (String e : zset01) {
+            System.out.print(e + "\t");
         }
 
 
